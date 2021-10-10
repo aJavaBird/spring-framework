@@ -73,7 +73,7 @@ public class AnnotationConfigApplicationContextTest {
 				= new AnnotationConfigApplicationContext();
 		annotationConfigApplicationContext.register(AppConfig.class);
 		// 如果要添加自定义的 BeanFactoryPostProcessor，
-		// 使用@Component不谢，需要手动调用 annotationConfigApplicationContext.addBeanFactoryPostProcessor(...);
+		// 使用@Component不行，需要手动调用 annotationConfigApplicationContext.addBeanFactoryPostProcessor(...);
 		annotationConfigApplicationContext.refresh();
 		/** // 可用 一条语句代替上面的3条： 无参构造 + register + refresh
 		 *  AnnotationConfigApplicationContext annotationConfigApplicationContext
